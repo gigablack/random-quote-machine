@@ -48,12 +48,12 @@ class QuoteBox extends Component {
                 <Grid container justify='space-evenly' direction='row' alignItems='center' style={{height:'inherit'}}>
                     <Grid item xs={12} style={{marginTop:50}}>
                         <Typography variant='h6' style={{marginLeft:50,marginRight:50}} id='text'>
-                            {text !== '' ? text : 'loading Quote...'}
+                            {text ? text : 'loading Quote...'}
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
                         <Typography variant='overline' align='right' style={{marginRight:50}} id='author'>
-                            {author !== '' ? author : 'loading Author...'}
+                            {author ? author : 'loading Author...'}
                         </Typography>
                     </Grid>
                     <Grid item xs={12}>
